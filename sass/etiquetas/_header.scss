@@ -1,0 +1,56 @@
+.menu-header-div {
+    background: #323234;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: " . logo logo .  buscador buscador buscador buscador buscador  mas mas .";
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    .logo {
+        align-items: center;
+        grid-area: logo;
+    }
+    .buscador {
+        align-items: center;
+        grid-area: buscador;
+        display: flex;
+        float: left;
+        .contenedor-buqueda {
+            .buscar-box {
+                width: 35vw;
+                height: 22px;
+            }
+        }
+        .buscar-icono {
+            padding: 0 10px;
+        }
+    }
+    .mas-iconos-derecha {
+        align-items: center;
+        grid-area: mas;
+        display: flex;
+        float: left;
+        .img-cicle {
+            padding-left: 10px;
+        }
+    }
+    margin-bottom: 20px;
+}
+
+button {
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    color: azure;
+}
+
+.titulo-light {
+    color: azure;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.img-cicle {
+    align-items: center;
+}

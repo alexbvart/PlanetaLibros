@@ -1,0 +1,54 @@
+        @import "../recursos/letras_colores";
+        h1,
+        h2 {
+            font-family: $lt-titulo;
+        }
+        
+        h1 {
+            color: $rojo;
+            font-size: $size-titulo;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: $size-titulo - 10px;
+        }
+        
+        .cita {
+            font-family: $lt-texto;
+            color: green;
+            font-size: 20px;
+        }
+        
+        p {
+            font-family: $lt-parrafo;
+            font-weight: lighter;
+        }
+        
+        .galeria {
+            padding: 50px 0;
+            // background: red;
+            h2 {
+                padding: 25px;
+                text-align: center;
+            }
+            .gal-libro {
+                display: grid;
+                // align-items: center;
+                grid-gap: 20px;
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                grid-template-columns: repeat(4, auto);
+                a {
+                    img {
+                        width: 250px;
+                        height: 390px;
+                        transition: all .2s;
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }

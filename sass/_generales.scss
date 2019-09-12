@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import"recursos/letras_colores";
+// -------------------------------------------
+// -------------------------------------------
+// -------------------------------------------
+body {
+    // padding: 0 10vw;
+    background: #ededed;
+}
+
+.pad-20H {
+    padding: 0 30px;
+}
+
+a {
+    text-decoration: none;
+    font-family: $lt-titulo;
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+}

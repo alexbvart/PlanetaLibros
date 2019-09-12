@@ -1,0 +1,45 @@
+@import "generales";
+// ----------------------------------------------
+// ---------------- p a r t e s------------------
+// ----------------------------------------------
+@import "etiquetas/nav";
+@import "etiquetas/header";
+// ----------------------------------------------
+// ----------------------------------------------
+// ----------------------------------------------
+.toda-la-ventana {
+    // background: #ededed;
+    display: grid;
+    grid-template-columns: repeat(auto, 2);
+    grid-template-areas: "nav", "footer";
+    .menu-header-div {
+        grid-area: "header";
+    }
+    padding: 0 10vw;
+    .nav-div {
+        grid-area: "nav";
+        display: inline-block;
+        article {
+            // margin: 0 70px; // -------------
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 20px;
+            grid-template-areas: "img art art";
+            .derecha-art {
+                grid-area: img;
+                margin-left: 20px;
+                // border-radius: 100px;
+            }
+            .izquierda-art {
+                grid-area: art;
+                background: white;
+                padding: 20px 30px;
+                margin-right: 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .footer-div {
+        grid-area: "footer";
+    }
+}

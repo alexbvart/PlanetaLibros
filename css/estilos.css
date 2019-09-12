@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #ededed; }
+
+.pad-20H {
+  padding: 0 30px; }
+
+a {
+  text-decoration: none;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 15px;
+  color: black;
+  font-weight: lighter; }
+
+h1,
+h2 {
+  font-family: "Encode Sans", sans-serif; }
+
+h1 {
+  color: #da211c;
+  font-size: 35px; }
+
+h2 {
+  color: #333;
+  font-size: 25px; }
+
+.cita {
+  font-family: "Crimson Pro", serif;
+  color: green;
+  font-size: 20px; }
+
+p {
+  font-family: "Rosario", sans-serif;
+  font-weight: lighter; }
+
+.galeria {
+  padding: 50px 0; }
+  .galeria h2 {
+    padding: 25px;
+    text-align: center; }
+  .galeria .gal-libro {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-grid-columns: (auto)[4];
+    grid-template-columns: repeat(4, auto); }
+    .galeria .gal-libro a img {
+      width: 250px;
+      height: 390px;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s; }
+      .galeria .gal-libro a img:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+
+.menu-header-div {
+  background: #323234;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: " . logo logo .  buscador buscador buscador buscador buscador  mas mas .";
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px; }
+  .menu-header-div .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-area: logo; }
+  .menu-header-div .buscador {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 5;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-area: buscador;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left; }
+    .menu-header-div .buscador .contenedor-buqueda .buscar-box {
+      width: 35vw;
+      height: 22px; }
+    .menu-header-div .buscador .buscar-icono {
+      padding: 0 10px; }
+  .menu-header-div .mas-iconos-derecha {
+    -ms-grid-row: 1;
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 2;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-area: mas;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left; }
+    .menu-header-div .mas-iconos-derecha .img-cicle {
+      padding-left: 10px; }
+
+button {
+  background: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: azure; }
+
+.titulo-light {
+  color: azure;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px; }
+
+.img-cicle {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.toda-la-ventana {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2)[auto];
+  grid-template-columns: repeat(auto, 2);
+  grid-template-areas: "nav", "footer";
+  padding: 0 10vw; }
+  .toda-la-ventana .menu-header-div {
+    grid-area: "header"; }
+  .toda-la-ventana .nav-div {
+    grid-area: "nav";
+    display: inline-block; }
+    .toda-la-ventana .nav-div article {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: auto 20px auto 20px auto;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 20px;
+      grid-template-areas: "img art art"; }
+      .toda-la-ventana .nav-div article .derecha-art {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: img;
+        margin-left: 20px; }
+      .toda-la-ventana .nav-div article .izquierda-art {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3;
+        grid-area: art;
+        background: white;
+        padding: 20px 30px;
+        margin-right: 20px;
+        border-radius: 10px; }
+  .toda-la-ventana .footer-div {
+    grid-area: "footer"; }
